@@ -14,7 +14,7 @@ body {
     /* space between card-scenes */
     margin: 16px;
     /* set perspective   */
-    perspective: 600px;
+    perspective: 1600px;
     
 }
 
@@ -26,7 +26,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    cursor: grab;
+    cursor: pointer;
     transition: transform 1s;
     /* preserve child 3d   */
     transform-style: preserve-3d;
@@ -64,6 +64,7 @@ img {
     justify-content:center;
     align-items: center;
     text-align:center;
+    background-image:url(Assets\gamenigtenvelope.png);
 
 
 }
@@ -72,6 +73,7 @@ img {
     
     /* flip it default   */
     transform: rotateY(180deg);
+     background-image:url(Assets\gamenightinvite.png);
  
 }
 
@@ -82,15 +84,7 @@ img {
     transform: rotateY(180deg);
 }
 
-#vet{
-    height: 50px;
-    width: 100px;
-    background-color: #e38170;
-    color:white;
-    border-radius: 5% 5% 5% 5%;
-    border-style: none;
-  
-}
+
 
 
 /* Media Query for Mobile */
@@ -139,8 +133,7 @@ img {
     .face {
         position: absolute;
         height: 90%;
-        width: 90%;
-      
+        width: 90%;  
         /* hide back face   */
         backface-visibility: hidden;
     }
@@ -157,22 +150,21 @@ img {
  
     .front {
         text-align:center;
-       background-image:url(Assets/phoneMedia.png);
+       background-image:url(Assets\gamenigtenvelope.png);
        background-size: contain;
        background-repeat: no-repeat;
        
-filter: drop-shadow(0rem .1rem .25rem #0e3b3d);
+
     }
     
 
     .back {
-        background-image:url(Assets/backofPhoneMedia.png);
+        background-image:url(Assets\gamenightinvite.png);
         background-size: contain;
        background-repeat: no-repeat;
         /* flip it default   */
         transform: rotateY(180deg);
   
-        filter: drop-shadow(0rem .1rem .25rem #0e3b3d);
     }
     
     /* flip card
@@ -220,7 +212,7 @@ filter: drop-shadow(0rem .1rem .25rem #0e3b3d);
         height: 100%;
         position: relative;
     
-        cursor: grabbing;
+        cursor: pointer;
         transition: transform 1s;
     
         /* preserve child 3d   */
@@ -250,24 +242,20 @@ filter: drop-shadow(0rem .1rem .25rem #0e3b3d);
 
     
     .front {
-        background-image:url(Assets/phoneMedia.png);
+        background-image:url(Assets\gamenigtenvelope.png);
         background-size: contain;
         background-repeat: no-repeat;
         text-align:center;
-       
-   
-        filter: drop-shadow(0rem .25rem .25rem #0e3b3d);
     }
   
 
     .back {
-        background-image:url(Assets/backofPhoneMedia.png);
+        background-image:url(Assets\gamenightinvite.png);
         background-size: contain;
        background-repeat: no-repeat;
         /* flip it default   */
         transform: rotateY(180deg);
-        
-        filter: drop-shadow(0rem .25rem .25rem #0e3b3d);
+ 
     }
     
     /* flip card
