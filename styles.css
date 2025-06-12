@@ -88,7 +88,7 @@ img {
 
 
 /* Media Query for Mobile */
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 200px) and (min-width: 100px) { 
     
     /* Diagnostic Styling. Delete When Done. 
     body:before {
